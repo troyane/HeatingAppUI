@@ -20,7 +20,7 @@ Item {
 
     background.color: active ? "#ffffff" : "#f5f7f9"
     shadowColor: mouseArea.pressed ? "#00000000" : "#15000000"
-    Behavior on shadowColor {ColorAnimation {duration: 100}}
+    Behavior on shadowColor { ColorAnimation { duration: 100 } }
     shadowSizeDefault: dp(5)
     shadowOffsetDefault: dp(5)
 

@@ -35,17 +35,20 @@ App {
         shadowColor: "#15000000"
         shadowSizeDefault: dp(5)
       }
+
       Row {
         width: parent.width
 
         ButtonRound {
           labelIcon: IconType.poweroff
         }
+
         ButtonRound {
           label: "Auto"
         }
+
         ButtonRound {
-          labelIcon: "\uf186"
+          labelIcon: "\uf186" // Moon symbol
           active: false
         }
       }
@@ -61,14 +64,16 @@ App {
         anchors.bottom: parent.bottom
 
         ButtonRound {
-          labelIcon: "\uf800"
+          labelIcon: "\uf800" // Flower symbol
           active: false
         }
+
         ButtonRound {
           labelIcon: IconType.tint
         }
+
         ButtonRound {
-          labelIcon: "\uf773"
+          labelIcon: "\uf773" // Water symbol
           active: false
         }
       }

@@ -31,8 +31,8 @@ Item {
     anchors.centerIn: parent
 
     background.color: "#ffffff"
-    shadowColor: "#15000000"//mouseArea.pressed ? "#00000000" : "#15000000"
-    Behavior on shadowColor {ColorAnimation {duration: 100}}
+    shadowColor: "#15000000"// mouseArea.pressed ? "#00000000" : "#15000000"
+    Behavior on shadowColor { ColorAnimation { duration: 100 } }
     shadowSizeDefault: dp(5)
     shadowOffsetDefault: dp(5)
   }
@@ -47,7 +47,7 @@ Item {
     stepSize: 0.1
     value: 21
     snapMode: QQC2.Dial.SnapAlways
-    background: Item {}
+    background: Item { }
     handle: AppPaper {
       id: handleItem
       width: dp(30)
@@ -94,7 +94,7 @@ Item {
 
   AppText {
     anchors.centerIn: parent
-    text: heat.toFixed(1) + "°"
+    text: heat.toFixed(1) + "\u00B0"
     color: heatColor
     font.pixelSize: sp(36)
   }
